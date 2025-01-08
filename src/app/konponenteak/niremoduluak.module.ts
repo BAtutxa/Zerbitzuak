@@ -2,6 +2,7 @@ import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { IonicModule } from '@ionic/angular';
 import { GoiburukoaComponent } from './goiburukoa/goiburukoa.component';
+import { RouterModule } from '@angular/router';
 
 
 
@@ -9,7 +10,8 @@ import { GoiburukoaComponent } from './goiburukoa/goiburukoa.component';
   declarations: [GoiburukoaComponent],
   imports: [
     CommonModule,
-    IonicModule
+    IonicModule,
+    RouterModule
   ],
   exports:[GoiburukoaComponent]
 })

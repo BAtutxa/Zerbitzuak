@@ -1,0 +1,18 @@
+<app-goiburukoa titulua="Txertatu"></app-goiburukoa>>
+
+<ion-content [fullscreen]="true">
+ <form #formularioa="ngForm">
+  <ion-list>
+    <ion-item>
+      <ion-input name="id" label="ID: " [(ngModel)]="id" placeholder="Idatzi IDa" required></ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-input name="izena" label="Izena: " [(ngModel)]="izena" placeholder="Idatzi Izena" required></ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-input name="abizena" label="Abizena: " [(ngModel)]="abizena" placeholder="Idatzi Abizena" required></ion-input>
+    </ion-item>
+  </ion-list>
+  <ion-button (click)="onClick()" [disabled]="!formularioa.valid">Txertatu</ion-button>
+ </form>
+</ion-content>

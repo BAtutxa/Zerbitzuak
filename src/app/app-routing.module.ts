@@ -11,6 +11,10 @@ const routes: Routes = [
     redirectTo: 'home',
     pathMatch: 'full'
   },
+  {
+    path: 'txertatu',
+    loadChildren: () => import('./txertatu/txertatu.module').then( m => m.TxertatuPageModule)
+  },
 ];
 
 @NgModule({
