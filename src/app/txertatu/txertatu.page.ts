@@ -12,11 +12,12 @@ export class TxertatuPage implements OnInit {
   id!:string;
   izena!:string;
   abizena!:string;
-  
+
+  zenbakiak:number[]=[1,2,3,4,5,6,7,8,9];
+
   constructor() { }
 
   onClick(){
-
   }
 
   ngOnInit() {

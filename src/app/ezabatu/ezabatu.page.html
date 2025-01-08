@@ -1,0 +1,10 @@
+<app-goiburukoa titulua="Ezabatu"></app-goiburukoa>
+
+<ion-content [fullscreen]="true">
+  <form #formularioa="ngForm">
+    <ion-item>
+      <ion-input name="id" label="ID: " placeholder="Idatzi ezabatu nahi duzun IDa" [(ngModel)]="id" required></ion-input>
+    </ion-item>
+    <ion-button (click)="onClick()" [disabled]="!formularioa.valid">Ezabatu</ion-button>
+  </form>
+</ion-content>
