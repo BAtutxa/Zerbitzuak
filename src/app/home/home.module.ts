@@ -16,7 +16,8 @@ import { RouterModule } from '@angular/router';
     IonicModule,
     HomePageRoutingModule,
     NiremoduluakModule,
-    RouterModule
+    RouterModule,
+    IonicModule,
   ],
   declarations: [HomePage]
 })

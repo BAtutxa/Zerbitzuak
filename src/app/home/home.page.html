@@ -2,8 +2,11 @@
 <ion-content [fullscreen]="true">
   <form #formularioa="ngForm">
     <ion-list>
-      <ion-item *ngFor="let pertsona of pertsonak">
+      <ion-item *ngFor="let pertsona of pertsonakZerbitzuak.getPertsonak()">
         <ion-label>{{pertsona.id}}: {{pertsona.izena}} {{pertsona.abizena}}</ion-label>
+        <ion-icon (click)="ezabatu(pertsona.id, pertsona.izena, pertsona.abizena)" name="trash-outline"></ion-icon>
+        <ion-icon (click)="gehitu()" name="add-circle-outline"></ion-icon>
+        <ion-icon (click)="aldatu(pertsona.id)" name="create-outline"></ion-icon>
       </ion-item>
     </ion-list>
     <ion-button routerLink="/txertatu">Txertatu</ion-button>
